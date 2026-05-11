@@ -4,44 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mustafa Altaweel</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <style>
       @font-face {
         font-family: "Geist Mono";
-        src: url("https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/GeistMono-Light.woff2")
-          format("woff2");
+        src: url("https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/GeistMono-Light.woff2") format("woff2");
         font-weight: 300;
       }
-
       @font-face {
         font-family: "Geist Mono";
-        src: url("https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/GeistMono-Regular.woff2")
-          format("woff2");
+        src: url("https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/GeistMono-Regular.woff2") format("woff2");
         font-weight: 400;
       }
-
       @font-face {
         font-family: "Geist Mono";
-        src: url("https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/GeistMono-Medium.woff2")
-          format("woff2");
+        src: url("https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/GeistMono-Medium.woff2") format("woff2");
         font-weight: 500;
       }
-
       @font-face {
         font-family: "Geist Mono";
-        src: url("https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/GeistMono-SemiBold.woff2")
-          format("woff2");
+        src: url("https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/GeistMono-SemiBold.woff2") format("woff2");
         font-weight: 600;
       }
-
       @font-face {
         font-family: "Geist Mono";
-        src: url("https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/GeistMono-Bold.woff2")
-          format("woff2");
+        src: url("https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/GeistMono-Bold.woff2") format("woff2");
         font-weight: 700;
       }
 
@@ -60,15 +48,8 @@
         --mono: "Geist Mono", monospace;
       }
 
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
 
       body {
         background: var(--bg);
@@ -85,16 +66,8 @@
         position: fixed;
         inset: 0;
         background:
-          radial-gradient(
-            ellipse 70% 45% at 8% 0%,
-            rgba(137, 191, 212, 0.055) 0%,
-            transparent 65%
-          ),
-          radial-gradient(
-            ellipse 50% 35% at 92% 100%,
-            rgba(90, 140, 180, 0.035) 0%,
-            transparent 60%
-          );
+          radial-gradient(ellipse 70% 45% at 8% 0%,   rgba(137,191,212,0.055) 0%, transparent 65%),
+          radial-gradient(ellipse 50% 35% at 92% 100%, rgba(90,140,180,0.035)  0%, transparent 60%);
         pointer-events: none;
         z-index: 0;
       }
@@ -125,78 +98,30 @@
         font-size: 14px;
         border-radius: 8px;
         margin-bottom: 28px;
-        box-shadow: 0 0 20px rgba(137, 191, 212, 0.22);
+        box-shadow: 0 0 20px rgba(137,191,212,0.22);
       }
 
-      header h1 {
-        font-size: 23px;
-        font-weight: 600;
-        letter-spacing: -0.025em;
-        margin-bottom: 6px;
-        color: #ddeef6;
-      }
+      header h1 { font-size: 23px; font-weight: 600; letter-spacing: -0.025em; margin-bottom: 6px; color: #ddeef6; }
 
-      .header-meta {
-        font-size: 12px;
-        color: var(--text-dim);
-        margin-bottom: 18px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        flex-wrap: wrap;
-      }
+      .header-meta { font-size: 12px; color: var(--text-dim); margin-bottom: 18px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+      .header-meta a { color: var(--text-dim); text-decoration: none; transition: color 0.2s; }
+      .header-meta a:hover { color: var(--accent); }
+      .dot { color: var(--text-muted); font-size: 10px; }
 
-      .header-meta a {
-        color: var(--text-dim);
-        text-decoration: none;
-        transition: color 0.2s;
-      }
+      .header-bio { font-size: 12.5px; color: var(--text-dim); line-height: 1.8; max-width: 540px; margin-bottom: 22px; }
+      .header-bio strong { color: var(--text); font-weight: 500; }
 
-      .header-meta a:hover {
-        color: var(--accent);
-      }
-
-      .dot {
-        color: var(--text-muted);
-        font-size: 10px;
-      }
-
-      .header-bio {
-        font-size: 12.5px;
-        color: var(--text-dim);
-        line-height: 1.8;
-        max-width: 540px;
-        margin-bottom: 22px;
-      }
-
-      .header-bio strong {
-        color: var(--text);
-        font-weight: 500;
-      }
-
-      .header-links {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-      }
+      .header-links { display: flex; gap: 10px; align-items: center; }
 
       .header-links a {
-        width: 32px;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 32px; height: 32px;
+        display: flex; align-items: center; justify-content: center;
         font-size: 14px;
         color: var(--text-dim);
         border: 1px solid var(--border);
         border-radius: 7px;
         text-decoration: none;
-        transition:
-          color 0.2s,
-          border-color 0.2s,
-          background 0.2s,
-          transform 0.2s,
-          box-shadow 0.2s;
+        transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s, box-shadow 0.2s;
       }
 
       .header-links a:hover {
@@ -204,20 +129,14 @@
         border-color: var(--border-hover);
         background: var(--accent-soft);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(137, 191, 212, 0.1);
+        box-shadow: 0 4px 12px rgba(137,191,212,0.1);
       }
 
       /* ── DIVIDER ── */
-      .divider {
-        border: none;
-        border-top: 1px solid var(--border);
-        margin: 48px 0;
-      }
+      .divider { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
 
       /* ── SECTION ── */
-      .section {
-        margin-bottom: 56px;
-      }
+      .section { margin-bottom: 56px; }
 
       .section-title {
         font-size: 10px;
@@ -231,15 +150,10 @@
         gap: 12px;
       }
 
-      .section-title::after {
-        content: "";
-        flex: 1;
-        height: 1px;
-        background: var(--border);
-      }
+      .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
-      /* ── PROJECT CARD ── */
-      .project {
+      /* ── CARDS (projects, research, exp) ── */
+      .project, .exp {
         margin-bottom: 10px;
         padding: 18px 20px;
         border: 1px solid var(--border);
@@ -247,26 +161,17 @@
         background: var(--surface);
         opacity: 0;
         transform: translateY(14px);
-        transition:
-          opacity 0.5s ease,
-          transform 0.5s ease,
-          border-color 0.25s,
-          box-shadow 0.25s;
+        transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s, box-shadow 0.25s;
       }
 
-      .project:last-child {
-        margin-bottom: 0;
-      }
+      .project:last-child, .exp:last-child { margin-bottom: 0; }
 
-      .project:hover {
+      .project:hover, .exp:hover {
         border-color: var(--border-hover);
-        box-shadow: 0 4px 28px rgba(137, 191, 212, 0.07);
+        box-shadow: 0 4px 28px rgba(137,191,212,0.07);
       }
 
-      .project.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      .project.visible, .exp.visible { opacity: 1; transform: translateY(0); }
 
       .project-header {
         display: flex;
@@ -286,30 +191,26 @@
         transition: color 0.2s;
       }
 
-      a.project-name:hover {
-        color: var(--accent);
-      }
+      a.project-name:hover { color: var(--accent); }
 
-      .project-year {
+      .project-year { font-size: 10.5px; color: var(--text-muted); white-space: nowrap; padding-top: 2px; }
+
+      .project-desc { font-size: 12px; color: var(--text-dim); line-height: 1.78; margin-bottom: 12px; }
+
+      .doi-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
         font-size: 10.5px;
-        color: var(--text-muted);
-        white-space: nowrap;
-        padding-top: 2px;
-      }
-
-      .project-desc {
-        font-size: 12px;
         color: var(--text-dim);
-        line-height: 1.78;
-        margin-bottom: 12px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: color 0.2s;
       }
+      .doi-link:hover { color: var(--accent); }
 
       /* ── TAGS ── */
-      .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-      }
+      .tags { display: flex; flex-wrap: wrap; gap: 5px; }
 
       .tag {
         font-size: 10px;
@@ -318,26 +219,15 @@
         background: var(--tag-bg);
         color: var(--tag-text);
         border-radius: 4px;
-        border: 1px solid rgba(137, 191, 212, 0.1);
+        border: 1px solid rgba(137,191,212,0.1);
         letter-spacing: 0.01em;
-        transition:
-          background 0.2s,
-          color 0.2s,
-          border-color 0.2s;
+        transition: background 0.2s, color 0.2s, border-color 0.2s;
       }
 
-      .tag:hover {
-        background: rgba(137, 191, 212, 0.14);
-        color: var(--text);
-        border-color: rgba(137, 191, 212, 0.22);
-      }
+      .tag:hover { background: rgba(137,191,212,0.14); color: var(--text); border-color: rgba(137,191,212,0.22); }
 
       /* ── SKILLS ── */
-      .skills-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-      }
+      .skills-grid { display: flex; flex-direction: column; gap: 14px; }
 
       .skill-row {
         display: grid;
@@ -346,241 +236,80 @@
         align-items: start;
         opacity: 0;
         transform: translateY(10px);
-        transition:
-          opacity 0.45s ease,
-          transform 0.45s ease;
+        transition: opacity 0.45s ease, transform 0.45s ease;
       }
 
-      .skill-row.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      .skill-row.visible { opacity: 1; transform: translateY(0); }
 
-      .skill-label {
-        font-size: 10.5px;
-        color: var(--text-muted);
-        font-weight: 500;
-        padding-top: 3px;
-        letter-spacing: 0.04em;
-      }
+      .skill-label { font-size: 10.5px; color: var(--text-muted); font-weight: 500; padding-top: 3px; letter-spacing: 0.04em; }
 
       /* ── EXPERIENCE ── */
-      .exp {
-        margin-bottom: 10px;
-        padding: 18px 20px;
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        background: var(--surface);
-        opacity: 0;
-        transform: translateY(14px);
-        transition:
-          opacity 0.5s ease,
-          transform 0.5s ease,
-          border-color 0.25s,
-          box-shadow 0.25s;
-      }
-
-      .exp:last-child {
-        margin-bottom: 0;
-      }
-
-      .exp:hover {
-        border-color: var(--border-hover);
-        box-shadow: 0 4px 28px rgba(137, 191, 212, 0.07);
-      }
-
-      .exp.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .exp-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 3px;
-      }
-
-      .exp-role {
-        font-size: 13px;
-        font-weight: 600;
-        color: var(--text);
-      }
-
-      .exp-date {
-        font-size: 10.5px;
-        color: var(--text-muted);
-      }
-
-      .exp-company {
-        font-size: 11.5px;
-        color: var(--text-dim);
-        margin-bottom: 8px;
-      }
-
-      .exp-desc {
-        font-size: 12px;
-        color: var(--text-dim);
-        line-height: 1.75;
-      }
-
-      .exp-desc ul {
-        padding-left: 16px;
-        margin-top: 6px;
-      }
-
-      .exp-desc li {
-        margin-bottom: 3px;
-      }
+      .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 3px; }
+      .exp-role { font-size: 13px; font-weight: 600; color: var(--text); }
+      .exp-date { font-size: 10.5px; color: var(--text-muted); }
+      .exp-company { font-size: 11.5px; color: var(--text-dim); margin-bottom: 8px; }
+      .exp-desc { font-size: 12px; color: var(--text-dim); line-height: 1.75; }
+      .exp-desc ul { padding-left: 16px; margin-top: 6px; }
+      .exp-desc li { margin-bottom: 3px; }
 
       /* ── FOOTER ── */
-      footer {
-        font-size: 11px;
-        color: var(--text-muted);
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 8px;
-        padding-top: 32px;
-        border-top: 1px solid var(--border);
-      }
-
-      footer a {
-        color: var(--text-muted);
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-
-      footer a:hover {
-        color: var(--accent);
-      }
+      footer { font-size: 11px; color: var(--text-muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding-top: 32px; border-top: 1px solid var(--border); }
+      footer a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+      footer a:hover { color: var(--accent); }
 
       /* ── ANIMATIONS ── */
       @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(16px);
-        }
-
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        from { opacity: 0; transform: translateY(16px); }
+        to   { opacity: 1; transform: translateY(0); }
       }
 
-      .reveal {
-        opacity: 0;
-        transform: translateY(14px);
-        transition:
-          opacity 0.55s ease,
-          transform 0.55s ease;
-      }
+      .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.55s ease, transform 0.55s ease; }
+      .reveal.visible { opacity: 1; transform: translateY(0); }
 
-      .reveal.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .stagger > * {
-        opacity: 0;
-        transform: translateY(12px);
-        transition:
-          opacity 0.45s ease,
-          transform 0.45s ease;
-      }
-
-      .stagger.visible > *:nth-child(1) {
-        opacity: 1;
-        transform: none;
-        transition-delay: 0s;
-      }
-
-      .stagger.visible > *:nth-child(2) {
-        opacity: 1;
-        transform: none;
-        transition-delay: 0.07s;
-      }
-
-      .stagger.visible > *:nth-child(3) {
-        opacity: 1;
-        transform: none;
-        transition-delay: 0.14s;
-      }
-
-      .stagger.visible > *:nth-child(4) {
-        opacity: 1;
-        transform: none;
-        transition-delay: 0.21s;
-      }
-
-      .stagger.visible > *:nth-child(5) {
-        opacity: 1;
-        transform: none;
-        transition-delay: 0.28s;
-      }
+      .stagger > * { opacity: 0; transform: translateY(12px); transition: opacity 0.45s ease, transform 0.45s ease; }
+      .stagger.visible > *:nth-child(1) { opacity:1; transform:none; transition-delay:0s; }
+      .stagger.visible > *:nth-child(2) { opacity:1; transform:none; transition-delay:0.07s; }
+      .stagger.visible > *:nth-child(3) { opacity:1; transform:none; transition-delay:0.14s; }
+      .stagger.visible > *:nth-child(4) { opacity:1; transform:none; transition-delay:0.21s; }
+      .stagger.visible > *:nth-child(5) { opacity:1; transform:none; transition-delay:0.28s; }
 
       @media (max-width: 540px) {
-        .page {
-          padding: 48px 20px 80px;
-        }
-
-        .skill-row {
-          grid-template-columns: 1fr;
-          gap: 6px;
-        }
-
-        .project-header {
-          flex-direction: column;
-        }
+        .page { padding: 48px 20px 80px; }
+        .skill-row { grid-template-columns: 1fr; gap: 6px; }
+        .project-header { flex-direction: column; }
       }
     </style>
   </head>
 
   <body>
     <div class="page">
+
       <!-- HEADER -->
       <header>
         <div class="logo"><i class="fa-solid fa-wifi"></i></div>
         <h1>Mustafa Altaweel</h1>
         <div class="header-meta">
-          <h3>Computer Science</h3>
+          <span>Computer Science</span>
           <span class="dot">·</span>
-          <a href="https://www.birzeit.edu" target="_blank">
-            <h3>Birzeit University</h3>
-          </a>
+          <a href="https://www.birzeit.edu" target="_blank">Birzeit University</a>
           <span class="dot">·</span>
-          <h3>Al-Bireh, Palestine</h3>
+          <span>Al-Bireh, Palestine</span>
         </div>
         <p class="header-bio">
-          Focused on cybersecurity and network defense. Proficient in C and
-          Python with hands-on experience in penetration testing, embedded
-          systems, and networking fundamentals. Interested in
-          <strong>network security</strong> and <strong>pentesting</strong>.
+          Focused on cybersecurity and network defense. Proficient in C and Python
+          with hands-on experience in penetration testing, embedded systems, and
+          networking fundamentals. Interested in <strong>network security</strong>
+          and <strong>pentesting</strong>.
         </p>
         <div class="header-links">
-          <a href="mailto:m.altaweel004@gmail.com" title="Email"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-          <a
-            href="https://github.com/altaweelmustafa"
-            target="_blank"
-            title="GitHub"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://linkedin.com/in/mustafa-altaweel04"
-            target="_blank"
-            title="LinkedIn"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="CV/Mustafa_CV.pdf" target="_blank" title="CV / Resume"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
+          <a href="mailto:m.altaweel004@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/altaweelmustafa" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/mustafa-altaweel04" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="CV/Mustafa_CV.pdf" target="_blank" title="CV / Resume"><i class="fa-solid fa-file-pdf"></i></a>
         </div>
       </header>
 
+      <hr class="divider" />
 
       <!-- PROJECTS -->
       <div class="section reveal">
@@ -588,89 +317,77 @@
 
         <div class="project stagger">
           <div class="project-header">
-            <span class="project-name"
-              >Multi-Agent System For Crisis Management</span
-            >
+            <span class="project-name">Multi-Agent System For Crisis Management</span>
             <span class="project-year"><i>in progress</i></span>
           </div>
-          <p class="project-desc">
-            Developed the network architecture and communication protocols for a
-            multi-agent system designed to manage crisis situations. Enables
-            autonomous agents to coordinate and share information effectively,
-            improving response times and decision-making during emergencies.
-          </p>
+          <p class="project-desc">Developed the network architecture and communication protocols for a multi-agent system designed to manage crisis situations. Enables autonomous agents to coordinate and share information effectively, improving response times and decision-making during emergencies.</p>
           <div class="tags">
-            <span class="tag">AI</span>
-            <span class="tag">ML</span>
-            <span class="tag">Networking</span>
-            <span class="tag">Security</span>
+            <span class="tag">AI</span><span class="tag">ML</span>
+            <span class="tag">Networking</span><span class="tag">Security</span>
             <span class="tag">Multi-Agent Systems</span>
           </div>
         </div>
 
         <div class="project stagger">
           <div class="project-header">
-            <a
-              class="project-name"
-              href="https://github.com/altaweelmustafa/IP-reputation-check"
-              target="_blank"
-              >IP Reputation Checker <i class="fa-brands fa-github"></i></a>
+            <a class="project-name" href="https://github.com/altaweelmustafa/IP-reputation-check" target="_blank">IP Reputation Checker <i class="fa-brands fa-github" style="font-size:11px;"></i></a>
             <span class="project-year">2026</span>
           </div>
-          <p class="project-desc">
-            A Python-based REST API that checks the reputation of IP addresses
-            using the AbuseIPDB service. Returns a structured JSON response with
-            reputation score and threat metadata.
-          </p>
+          <p class="project-desc">A Python-based REST API that checks the reputation of IP addresses using the AbuseIPDB service. Returns a structured JSON response with reputation score and threat metadata.</p>
           <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">REST API</span>
-            <span class="tag">AbuseIPDB</span>
+            <span class="tag">Python</span><span class="tag">REST API</span><span class="tag">AbuseIPDB</span>
           </div>
         </div>
 
         <div class="project stagger">
           <div class="project-header">
-            <a
-              class="project-name"
-              href="https://github.com/altaweelmustafa/TRM01"
-              target="_blank"
-              >TRM-01 <i class="fa-brands fa-github"></i></a
-            >
+            <a class="project-name" href="https://github.com/altaweelmustafa/TRM01" target="_blank">TRM-01 <i class="fa-brands fa-github" style="font-size:11px;"></i></a>
             <span class="project-year">2025</span>
           </div>
-          <p class="project-desc">
-            An ethical Arduino Nano device that captures an IR remote signal and
-            replays it on button press. Demonstrates embedded systems design,
-            signal capture, and microcontroller programming.
-          </p>
+          <p class="project-desc">An ethical Arduino Nano device that captures an IR remote signal and replays it on button press. Demonstrates embedded systems design, signal capture, and microcontroller programming.</p>
           <div class="tags">
-            <span class="tag">Arduino Nano</span>
-            <span class="tag">C++</span>
-            <span class="tag">Sensors</span>
-            <span class="tag">Embedded Systems</span>
+            <span class="tag">Arduino Nano</span><span class="tag">C++</span>
+            <span class="tag">Sensors</span><span class="tag">Embedded Systems</span>
           </div>
         </div>
 
         <div class="project stagger">
           <div class="project-header">
-            <span class="project-name">Duva CLI</span>
+            <a class="project-name" href="https://github.com/altaweelmustafa/DuvaCLI" target="_blank">Duva CLI <i class="fa-brands fa-github" style="font-size:11px;"></i></a>
             <span class="project-year">2026</span>
           </div>
-          <p class="project-desc">
-            A command-line tool that encrypts and decrypts messages using 3
-            layers of encryption — VPN, TLS, and AES256 — for secure
-            transmission over untrusted networks.
-          </p>
+          <p class="project-desc">A command-line tool that encrypts and decrypts messages using 3 layers of encryption — VPN, TLS, and AES256 — for secure transmission over untrusted networks.</p>
           <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Cryptography</span>
-            <span class="tag">Networking</span>
-            <span class="tag">AES256</span>
-            <span class="tag">TLS</span>
+            <span class="tag">Python</span><span class="tag">Cryptography</span>
+            <span class="tag">Networking</span><span class="tag">AES256</span><span class="tag">TLS</span>
           </div>
         </div>
       </div>
+
+      <hr class="divider" />
+
+      <!-- RESEARCH -->
+      <div class="section reveal">
+        <div class="section-title">Research</div>
+
+        <div class="project stagger">
+          <div class="project-header">
+            <a class="project-name" href="https://github.com/altaweelmustafa/QLEACH-EAS-Simulation" target="_blank">QLEACH-EAS Simulation <i class="fa-brands fa-github" style="font-size:11px;"></i></a>
+            <span class="project-year">2025</span>
+          </div>
+          <p class="project-desc">Simulated the QLEACH-EAS protocol — an energy-aware, QoS-enhanced clustering algorithm for wireless sensor networks. Investigates routing efficiency, energy consumption, and network lifetime optimization in resource-constrained IoT environments.</p>
+          <div class="tags">
+            <span class="tag">WSN</span><span class="tag">IoT</span>
+            <span class="tag">LEACH</span><span class="tag">Energy Efficiency</span>
+            <span class="tag">QoS</span><span class="tag">Networking</span>
+          </div>
+          <a class="doi-link" href="https://doi.org/10.13140/RG.2.2.36348.09607" target="_blank">
+            <i class="fa-solid fa-book-open"></i> DOI: 10.13140/RG.2.2.36348.09607
+          </a>
+        </div>
+      </div>
+
+      <hr class="divider" />
 
       <!-- SKILLS -->
       <div class="section reveal">
@@ -679,46 +396,35 @@
           <div class="skill-row">
             <span class="skill-label">Languages</span>
             <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">C</span>
-              <span class="tag">Java</span>
-              <span class="tag">Assembly (x86)</span>
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">SQL</span>
+              <span class="tag">Python</span><span class="tag">C</span>
+              <span class="tag">Java</span><span class="tag">Assembly (x86)</span>
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">SQL</span>
             </div>
           </div>
           <div class="skill-row">
             <span class="skill-label">Security Tools</span>
             <div class="tags">
-              <span class="tag">Wireshark</span>
-              <span class="tag">Nmap</span>
-              <span class="tag">Metasploit</span>
-              <span class="tag">Burp Suite</span>
-              <span class="tag">Hydra</span>
+              <span class="tag">Wireshark</span><span class="tag">Nmap</span>
+              <span class="tag">Metasploit</span><span class="tag">Burp Suite</span><span class="tag">Hydra</span>
             </div>
           </div>
           <div class="skill-row">
             <span class="skill-label">Embedded</span>
             <div class="tags">
-              <span class="tag">ESP32</span>
-              <span class="tag">Arduino</span>
-              <span class="tag">Raspberry Pi</span>
+              <span class="tag">ESP32</span><span class="tag">Arduino</span><span class="tag">Raspberry Pi</span>
             </div>
           </div>
           <div class="skill-row">
             <span class="skill-label">Tools</span>
             <div class="tags">
-              <span class="tag">Git</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Cisco Packet Tracer</span>
-              <span class="tag">Tailscale</span>
+              <span class="tag">Git</span><span class="tag">Linux</span>
+              <span class="tag">Docker</span><span class="tag">Cisco Packet Tracer</span><span class="tag">Tailscale</span>
             </div>
           </div>
         </div>
       </div>
 
+      <hr class="divider" />
 
       <!-- EXPERIENCE -->
       <div class="section reveal">
@@ -730,10 +436,7 @@
             <span class="exp-date">2025</span>
           </div>
           <div class="exp-company">Coolnet · Al-Bireh, Palestine</div>
-          <div class="exp-desc">
-            Provided technical and customer support, handling client inquiries
-            and troubleshooting connectivity and network-related issues.
-          </div>
+          <div class="exp-desc">Provided technical and customer support, handling client inquiries and troubleshooting connectivity and network-related issues.</div>
         </div>
 
         <div class="exp stagger">
@@ -744,45 +447,36 @@
           <div class="exp-company">LABOO Academy · Palestine</div>
           <div class="exp-desc">
             <ul>
-              <li>
-                Taught basic electronics and embedded systems to youth, covering
-                digital logic, sensors, and microcontroller fundamentals.
-              </li>
-              <li>
-                Delivered hands-on lab sessions and mentored students through
-                practical projects.
-              </li>
+              <li>Taught basic electronics and embedded systems to youth, covering digital logic, sensors, and microcontroller fundamentals.</li>
+              <li>Delivered hands-on lab sessions and mentored students through practical projects.</li>
             </ul>
           </div>
         </div>
       </div>
 
+      <hr class="divider" />
 
       <!-- FOOTER -->
       <footer>
         <span>© 2025 Mustafa Altaweel</span>
         <a href="mailto:m.altaweel004@gmail.com">m.altaweel004@gmail.com</a>
       </footer>
+
     </div>
 
     <script>
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.08 },
-      );
-
-      document
-        .querySelectorAll(".reveal, .stagger, .project, .skill-row, .exp")
-        .forEach((el) => {
-          observer.observe(el);
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
         });
+      }, { threshold: 0.08 });
+
+      document.querySelectorAll(".reveal, .stagger, .project, .skill-row, .exp").forEach(el => {
+        observer.observe(el);
+      });
     </script>
   </body>
 </html>

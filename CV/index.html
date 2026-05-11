@@ -6,17 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mustafa Altaweel — CV</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
   <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: "Nunito", sans-serif;
@@ -50,12 +42,7 @@
       margin-bottom: 4px;
     }
 
-    .header-left p {
-      font-size: 9.5pt;
-      font-weight: 300;
-      color: #222;
-      line-height: 1.7;
-    }
+    .header-left p { font-size: 9.5pt; font-weight: 300; color: #222; line-height: 1.7; }
 
     .header-right {
       display: flex;
@@ -65,8 +52,7 @@
       padding-top: 4px;
     }
 
-    .header-right a,
-    .header-right span {
+    .header-right a, .header-right span {
       font-size: 9.5pt;
       font-weight: 300;
       color: #111;
@@ -76,39 +62,16 @@
       gap: 6px;
     }
 
-    .header-right .icon {
-      width: 13px;
-      height: 13px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .header-right svg {
-      width: 13px;
-      height: 13px;
-    }
+    .header-right .icon { width: 13px; height: 13px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .header-right svg { width: 13px; height: 13px; }
 
     /* ── DIVIDER ── */
-    hr.divider {
-      border: none;
-      border-top: 0.5px solid #111;
-      margin: 0;
-      overflow: visible;
-    }
+    hr.divider { border: none; border-top: 0.5px solid #111; margin: 0; overflow: visible; }
 
     /* ── SECTION HEADING ── */
-    .section {
-      margin-top: 13px;
-    }
+    .section { margin-top: 13px; }
 
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      margin-bottom: 0;
-    }
+    .section-header { display: flex; align-items: center; gap: 6px; margin-bottom: 0; }
 
     .section-title {
       font-size: 9.5pt;
@@ -119,196 +82,71 @@
       flex-shrink: 0;
     }
 
-    .section-header hr.divider {
-      flex: 1;
-    }
+    .section-header hr.divider { flex: 1; }
 
     /* ── TWO-COLUMN LAYOUT ── */
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0 28px;
-      margin-top: 12px;
-    }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; margin-top: 12px; }
 
-    .col-section p {
-      font-size: 9.2pt;
-      font-weight: 300;
-      line-height: 1.5;
-    }
+    .col-section p { font-size: 9.2pt; font-weight: 300; line-height: 1.5; }
 
-    .skills-list {
-      list-style: none;
-      font-size: 9.2pt;
-      font-weight: 300;
-      line-height: 1.7;
-    }
-
-    .skills-list li strong {
-      font-weight: 600;
-    }
+    .skills-list { list-style: none; font-size: 9.2pt; font-weight: 300; line-height: 1.7; }
+    .skills-list li strong { font-weight: 600; }
 
     /* ── EXPERIENCE ── */
-    .exp-entry {
-      display: grid;
-      grid-template-columns: 115px 1fr;
-      gap: 0 16px;
-      margin-top: 10px;
-    }
+    .exp-entry { display: grid; grid-template-columns: 115px 1fr; gap: 0 16px; margin-top: 10px; }
 
-    .exp-date {
-      font-size: 9.2pt;
-      font-weight: 300;
-      color: #333;
-      padding-top: 1px;
-      white-space: nowrap;
-    }
+    .exp-date { font-size: 9.2pt; font-weight: 300; color: #333; padding-top: 1px; white-space: nowrap; }
 
-    .exp-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 8px;
-    }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 
-    .exp-role {
-      font-size: 9.5pt;
-      font-weight: 700;
-    }
+    .exp-role { font-size: 9.5pt; font-weight: 700; }
 
-    .exp-company {
-      font-size: 9.2pt;
-      font-weight: 300;
-      color: #1a56c4;
-      text-decoration: none;
-      white-space: nowrap;
-    }
+    .exp-company { font-size: 9.2pt; font-weight: 300; color: #1a56c4; text-decoration: none; white-space: nowrap; }
 
-    .exp-desc {
-      font-size: 9.2pt;
-      font-weight: 300;
-      line-height: 1.5;
-      margin-top: 2px;
-      color: #222;
-    }
+    .exp-desc { font-size: 9.2pt; font-weight: 300; line-height: 1.5; margin-top: 2px; color: #222; }
 
     /* ── PROJECTS ── */
-    .proj-entry {
-      display: grid;
-      grid-template-columns: 115px 1fr;
-      gap: 0 16px;
-      margin-top: 10px;
-    }
+    .proj-entry { display: grid; grid-template-columns: 115px 1fr; gap: 0 16px; margin-top: 10px; }
 
-    .proj-tags {
-      font-size: 8.5pt;
-      font-weight: 300;
-      color: #333;
-      line-height: 1.6;
-    }
+    .proj-tags { font-size: 8.5pt; font-weight: 300; color: #333; line-height: 1.6; }
 
-    .proj-header,
-    .proj {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 8px;
-    }
+    .proj-header, .proj { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 
-    .proj-name {
-      font-size: 9.5pt;
-      font-weight: 700;
-    }
+    .proj-name { font-size: 9.5pt; font-weight: 700; }
 
-    .proj-link {
-      font-size: 9.2pt;
-      font-weight: 300;
-      color: #1a56c4;
-      text-decoration: none;
-      white-space: nowrap;
-    }
+    .proj-link { font-size: 9.2pt; font-weight: 300; color: #1a56c4; text-decoration: none; white-space: nowrap; }
 
-    .proj-desc {
-      font-size: 9.2pt;
-      font-weight: 300;
-      line-height: 1.5;
-      margin-top: 2px;
-      color: #222;
-    }
+    .proj-desc { font-size: 9.2pt; font-weight: 300; line-height: 1.5; margin-top: 2px; color: #222; }
 
     /* ── EDUCATION + CERTIFICATIONS ── */
-    .edu-cert-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0 28px;
-      margin-top: 12px;
-    }
+    .edu-cert-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; margin-top: 12px; }
 
-    .edu-entry {
-      display: grid;
-      grid-template-columns: 100px 1fr;
-      gap: 0 12px;
-      margin-top: 8px;
-    }
+    .edu-entry { display: grid; grid-template-columns: 100px 1fr; gap: 0 12px; margin-top: 8px; }
 
-    .edu-date {
-      font-size: 9.2pt;
-      font-weight: 300;
-      color: #333;
-      padding-top: 1px;
-      white-space: nowrap;
-    }
+    .edu-date { font-size: 9.2pt; font-weight: 300; color: #333; padding-top: 1px; white-space: nowrap; }
 
-    .edu-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 8px;
-    }
+    .edu-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 
-    .edu-institution {
-      font-size: 9.5pt;
-      font-weight: 700;
-    }
+    .edu-institution { font-size: 9.5pt; font-weight: 700; }
 
-    .edu-degree {
-      font-size: 9.5pt;
-      font-weight: 600;
-    }
+    .edu-degree { font-size: 9.5pt; font-weight: 600; }
 
-    .edu-sub {
-      font-size: 9.2pt;
-      font-weight: 300;
-      color: #222;
-      line-height: 1.6;
-    }
+    .edu-sub { font-size: 9.2pt; font-weight: 300; color: #222; line-height: 1.6; }
 
     /* ── LANGUAGES ── */
-    .languages-row {
-      margin-top: 6px;
-      font-size: 9.2pt;
-      font-weight: 300;
-    }
-
-    .languages-row strong {
-      font-weight: 600;
-    }
+    .languages-row { margin-top: 6px; font-size: 9.2pt; font-weight: 300; }
+    .languages-row strong { font-weight: 600; }
 
     @media print {
-      body {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-
-      .page {
-        padding: 14mm 15mm;
-      }
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page { padding: 14mm 15mm; }
     }
   </style>
 </head>
 
 <body>
   <div class="page">
+
     <!-- HEADER -->
     <div class="header">
       <div class="header-left">
@@ -318,10 +156,8 @@
       <div class="header-right">
         <a href="https://maltaweel.com" target="_blank">
           <span class="icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="2" y1="12" x2="22" y2="12" />
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" />
               <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
             </svg>
           </span>
@@ -330,8 +166,7 @@
         <a href="https://github.com/altaweelmustafa" target="_blank">
           <span class="icon">
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
             </svg>
           </span>
           github.com/altaweelmustafa
@@ -339,8 +174,7 @@
         <span>
           <span class="icon">
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
             </svg>
           </span>
           Al-Bireh, Palestine
@@ -356,12 +190,10 @@
           <hr class="divider" />
         </div>
         <p style="margin-top: 6px">
-          Computer Science student at Birzeit University. Currently focusing
-          on cybersecurity and network defense, with hands-on experience in
-          penetration testing tools and networking fundamentals. Proficient in
-          C and Python with a strong interest in
-          <strong>network security</strong> and
-          <strong>penetration testing</strong>.
+          Computer Science student at Birzeit University. Currently focusing on cybersecurity
+          and network defense, with hands-on experience in penetration testing tools and
+          networking fundamentals. Proficient in C and Python with a strong interest in
+          <strong>network security</strong> and <strong>penetration testing</strong>.
         </p>
       </div>
       <div class="col-section">
@@ -371,14 +203,8 @@
         </div>
         <ul class="skills-list" style="margin-top: 6px">
           <li><strong>Languages:</strong> Java, Python, C, HTML, CSS</li>
-          <li>
-            <strong>Tools:</strong> Wireshark, Nmap, Metasploit, Burp Suite,
-            Hydra
-          </li>
-          <li>
-            <strong>Technologies:</strong> Git, Linux, Docker, Cisco Packet
-            Tracer, ESP32, Arduino
-          </li>
+          <li><strong>Tools:</strong> Wireshark, Nmap, Metasploit, Burp Suite, Hydra</li>
+          <li><strong>Technologies:</strong> Git, Linux, Docker, Cisco Packet Tracer, ESP32, Arduino</li>
         </ul>
       </div>
     </div>
@@ -397,12 +223,7 @@
             <span class="exp-role">Teaching Assistant — Arduino UNO</span>
             <a class="exp-company" href="https://labooacademy.ps/" target="_blank">LABOO Academy</a>
           </div>
-          <p class="exp-desc">
-            Taught basic electronics and embedded systems to youth, covering
-            digital logic, sensors, and microcontroller fundamentals.
-            Delivered hands-on lab sessions and mentored students through
-            practical projects.
-          </p>
+          <p class="exp-desc">Taught basic electronics and embedded systems to youth, covering digital logic, sensors, and microcontroller fundamentals. Delivered hands-on lab sessions and mentored students through practical projects.</p>
         </div>
       </div>
 
@@ -413,10 +234,7 @@
             <span class="exp-role">Call Center Agent</span>
             <a class="exp-company" href="https://coolnet.ps/" target="_blank">Coolnet</a>
           </div>
-          <p class="exp-desc">
-            Provided technical and customer support, handling client inquiries
-            and troubleshooting connectivity and network-related issues.
-          </p>
+          <p class="exp-desc">Provided technical and customer support, handling client inquiries and troubleshooting connectivity and network-related issues.</p>
         </div>
       </div>
     </div>
@@ -429,20 +247,12 @@
       </div>
 
       <div class="proj-entry">
-        <div class="proj-tags">
-          <i>AI, ML</i><br /><i>Networking, Security</i>
-        </div>
+        <div class="proj-tags"><i>AI, ML</i><br /><i>Networking, Security</i></div>
         <div class="proj-body">
           <div class="proj-header">
             <span class="proj-name">Multi-Agent System For Crisis Management</span>
           </div>
-          <p class="proj-desc">
-            Developed the network architecture and communication protocols for
-            a multi-agent system designed to manage crisis situations. The
-            system enables autonomous agents to coordinate and share
-            information effectively, improving response times and
-            decision-making during emergencies.
-          </p>
+          <p class="proj-desc">Developed the network architecture and communication protocols for a multi-agent system designed to manage crisis situations. Enables autonomous agents to coordinate and share information effectively, improving response times and decision-making during emergencies.</p>
         </div>
       </div>
 
@@ -451,47 +261,53 @@
         <div class="proj-body">
           <div class="proj">
             <span class="proj-name">IP Reputation Checker</span>
-            <a class="proj-link" href="https://github.com/altaweelmustafa/IP-reputation-check" target="_blank"><i
-                class="fa-brands fa-github"></i></a>
+            <a class="proj-link" href="https://github.com/altaweelmustafa/IP-reputation-check" target="_blank"><i class="fa-brands fa-github"></i></a>
           </div>
-          <p class="proj-desc">
-            Developed a Python-based REST API that checks the reputation of IP
-            addresses using the AbuseIPDB service. The API accepts an IP
-            address as input and returns a JSON response containing the
-            reputation score and related information.
-          </p>
+          <p class="proj-desc">Developed a Python-based REST API that checks the reputation of IP addresses using the AbuseIPDB service. Returns a JSON response containing the reputation score and related information.</p>
         </div>
       </div>
 
       <div class="proj-entry">
-        <div class="proj-tags">
-          <i>Arduino Nano</i><br /><i>Sensors, C++</i>
-        </div>
+        <div class="proj-tags"><i>Arduino Nano</i><br /><i>Sensors, C++</i></div>
         <div class="proj-body">
           <div class="proj">
             <span class="proj-name">TRM-01</span>
-            <a class="proj-link" href="https://github.com/altaweelmustafa/TRM01" target="_blank"><i
-                class="fa-brands fa-github"></i></a>
+            <a class="proj-link" href="https://github.com/altaweelmustafa/TRM01" target="_blank"><i class="fa-brands fa-github"></i></a>
           </div>
-          <p class="proj-desc">
-            Developed a simple <strong>ethical</strong> Arduino-based device
-            that captures an IR remote signal and replays it on button press.
-          </p>
+          <p class="proj-desc">Developed a simple <strong>ethical</strong> Arduino-based device that captures an IR remote signal and replays it on button press.</p>
         </div>
       </div>
 
       <div class="proj-entry">
-        <div class="proj-tags">
-          <i>Cryptography</i><br /><i>Networking</i>
-        </div>
+        <div class="proj-tags"><i>Cryptography</i><br /><i>Networking</i></div>
         <div class="proj-body">
-          <div class="proj-header">
+          <div class="proj">
             <span class="proj-name">Duva CLI</span>
+            <a class="proj-link" href="https://github.com/altaweelmustafa/DuvaCLI" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <p class="proj-desc">Created a Python command-line tool that encrypts and decrypts messages using 3 layers of encryption — VPN, TLS, and AES256 — allowing users to securely transmit messages over a network.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESEARCH -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-title">Research</span>
+        <hr class="divider" />
+      </div>
+
+      <div class="proj-entry">
+        <div class="proj-tags"><i>WSN, IoT</i><br /><i>QoS, Energy</i></div>
+        <div class="proj-body">
+          <div class="proj">
+            <span class="proj-name">QLEACH-EAS Simulation</span>
+            <a class="proj-link" href="https://github.com/altaweelmustafa/QLEACH-EAS-Simulation" target="_blank"><i class="fa-brands fa-github"></i></a>
           </div>
           <p class="proj-desc">
-            Created a Python command-line tool that encrypts and decrypts
-            messages using 3 layers of encryption — VPN, TLS, and AES256 —
-            allowing users to securely transmit messages over a network.
+            Simulated the QLEACH-EAS protocol — an energy-aware, QoS-enhanced clustering algorithm for wireless sensor networks. Investigates routing efficiency, energy consumption, and network lifetime optimization in IoT environments.
+            <br />
+            <a href="https://doi.org/10.13140/RG.2.2.36348.09607" target="_blank" style="color:#1a56c4;">DOI: 10.13140/RG.2.2.36348.09607</a>
           </p>
         </div>
       </div>
@@ -546,7 +362,7 @@
         <strong>English</strong> - B2
       </div>
     </div>
+
   </div>
 </body>
-
 </html>
