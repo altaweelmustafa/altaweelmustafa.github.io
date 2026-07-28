@@ -6,9 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mustafa Altaweel — CV</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
+    rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
       font-family: "Nunito", sans-serif;
@@ -42,7 +50,12 @@
       margin-bottom: 4px;
     }
 
-    .header-left p { font-size: 9.5pt; font-weight: 300; color: #222; line-height: 1.7; }
+    .header-left p {
+      font-size: 9.5pt;
+      font-weight: 300;
+      color: #222;
+      line-height: 1.7;
+    }
 
     .header-right {
       display: flex;
@@ -51,12 +64,13 @@
       align-items: flex-start;
       padding-top: 4px;
     }
-    
+
     .header-right .icon {
-     color: #1a56c4;
+      color: #1a56c4;
     }
 
-    .header-right a, .header-right span {
+    .header-right a,
+    .header-right span {
       font-size: 9.5pt;
       font-weight: 300;
       color: #111;
@@ -66,16 +80,39 @@
       gap: 6px;
     }
 
-    .header-right .icon { width: 13px; height: 13px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .header-right svg { width: 13px; height: 13px; }
+    .header-right .icon {
+      width: 13px;
+      height: 13px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .header-right svg {
+      width: 13px;
+      height: 13px;
+    }
 
     /* ── DIVIDER ── */
-    hr.divider { border: none; border-top: 0.5px solid #111; margin: 0; overflow: visible; }
+    hr.divider {
+      border: none;
+      border-top: 0.5px solid #111;
+      margin: 0;
+      overflow: visible;
+    }
 
     /* ── SECTION HEADING ── */
-    .section { margin-top: 13px; }
+    .section {
+      margin-top: 13px;
+    }
 
-    .section-header { display: flex; align-items: center; gap: 6px; margin-bottom: 0; }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 0;
+    }
 
     .section-title {
       font-size: 9.5pt;
@@ -86,91 +123,216 @@
       flex-shrink: 0;
     }
 
-    .section-header hr.divider { flex: 1; }
+    .section-header hr.divider {
+      flex: 1;
+    }
 
     /* ── TWO-COLUMN LAYOUT ── */
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; margin-top: 12px; }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 28px;
+      margin-top: 12px;
+    }
 
-    .col-section p { font-size: 9.2pt; font-weight: 300; line-height: 1.5; }
+    .col-section p {
+      font-size: 9.2pt;
+      font-weight: 300;
+      line-height: 1.5;
+    }
 
-    .skills-list { list-style: none; font-size: 9.2pt; font-weight: 300; line-height: 1.7; }
-    .skills-list li strong { font-weight: 600; }
+    .skills-list {
+      list-style: none;
+      font-size: 9.2pt;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .skills-list li strong {
+      font-weight: 600;
+    }
 
     /* ── EXPERIENCE ── */
-    .exp-entry { display: grid; grid-template-columns: 115px 1fr; gap: 0 16px; margin-top: 10px; }
+    .exp-entry {
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      gap: 0 16px;
+      margin-top: 10px;
+    }
 
-    .exp-date { font-size: 9.2pt; font-weight: 300; color: #333; padding-top: 1px; white-space: nowrap; }
+    .exp-date {
+      font-size: 9.2pt;
+      font-weight: 300;
+      color: #333;
+      padding-top: 1px;
+      white-space: nowrap;
+    }
 
-    .exp-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
 
-    .exp-role { font-size: 9.5pt; font-weight: 700; }
+    .exp-role {
+      font-size: 9.5pt;
+      font-weight: 700;
+    }
 
-    .exp-company { font-size: 9.2pt; font-weight: 300; color: #1a56c4; text-decoration: none; white-space: nowrap; }
+    .exp-company {
+      font-size: 9.2pt;
+      font-weight: 300;
+      color: #1a56c4;
+      text-decoration: none;
+      white-space: nowrap;
+    }
 
-    .exp-desc { font-size: 9.2pt; font-weight: 300; line-height: 1.5; margin-top: 2px; color: #222; }
+    .exp-desc {
+      font-size: 9.2pt;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-top: 2px;
+      color: #222;
+    }
 
     /* ── PROJECTS ── */
-    .proj-entry { display: grid; grid-template-columns: 115px 1fr; gap: 0 16px; margin-top: 10px; }
+    .proj-entry {
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      gap: 0 16px;
+      margin-top: 10px;
+    }
 
-    .proj-tags { font-size: 8.5pt; font-weight: 300; color: #333; line-height: 1.6; }
+    .proj-tags {
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: #333;
+      line-height: 1.6;
+    }
 
-    .proj-header, .proj { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .proj-header,
+    .proj {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
 
-    .proj-name { font-size: 9.5pt; font-weight: 700; }
+    .proj-name {
+      font-size: 9.5pt;
+      font-weight: 700;
+    }
 
-    .proj-link { font-size: 9.2pt; font-weight: 300; color: #1a56c4; text-decoration: none; white-space: nowrap; }
+    .proj-link {
+      font-size: 9.2pt;
+      font-weight: 300;
+      color: #1a56c4;
+      text-decoration: none;
+      white-space: nowrap;
+    }
 
-    .proj-desc { font-size: 9.2pt; font-weight: 300; line-height: 1.5; margin-top: 2px; color: #222; }
+    .proj-desc {
+      font-size: 9.2pt;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-top: 2px;
+      color: #222;
+    }
 
     /* ── EDUCATION + CERTIFICATIONS ── */
-    .edu-cert-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; margin-top: 12px; }
+    .edu-cert-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 28px;
+      margin-top: 12px;
+    }
 
-    .edu-entry { display: grid; grid-template-columns: 100px 1fr; gap: 0 12px; margin-top: 8px; }
+    .edu-entry {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 0 12px;
+      margin-top: 8px;
+    }
 
-    .edu-date { font-size: 9.2pt; font-weight: 300; color: #333; padding-top: 1px; white-space: nowrap; }
+    .edu-date {
+      font-size: 9.2pt;
+      font-weight: 300;
+      color: #333;
+      padding-top: 1px;
+      white-space: nowrap;
+    }
 
-    .edu-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
 
-    .edu-institution { font-size: 9.5pt; font-weight: 700; }
+    .edu-institution {
+      font-size: 9.5pt;
+      font-weight: 700;
+    }
 
-    .edu-degree { font-size: 9.5pt; font-weight: 600; }
+    .edu-degree {
+      font-size: 9.5pt;
+      font-weight: 600;
+    }
 
-    .edu-sub { font-size: 9.2pt; font-weight: 300; color: #222; line-height: 1.6; }
+    .edu-sub {
+      font-size: 9.2pt;
+      font-weight: 300;
+      color: #222;
+      line-height: 1.6;
+    }
 
     /* ── LANGUAGES ── */
-    .languages-row { margin-top: 6px; font-size: 9.2pt; font-weight: 300; }
-    .languages-row strong { font-weight: 600; }
+    .languages-row {
+      margin-top: 6px;
+      font-size: 9.2pt;
+      font-weight: 300;
+    }
+
+    .languages-row strong {
+      font-weight: 600;
+    }
 
     @media print {
-      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-      .page { padding: 14mm 15mm; }
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .page {
+        padding: 14mm 15mm;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="page">
-
     <!-- HEADER -->
     <div class="header">
       <div class="header-left">
         <h1>MUSTAFA ALTAWEEL</h1>
         <p>m.altaweel004@gmail.com<br />(+970) 59-523-7162</p>
       </div>
-     <div class="header-right">
-  <a href="https://altaweelmustafa.github.io" target="_blank">
-    <span class="icon"><i class="fa-solid fa-globe"></i></span>
-    maltaweel.com
-  </a>
-  <a href="https://github.com/altaweelmustafa" target="_blank">
-    <span class="icon"><i class="fa-brands fa-github"></i></span>
-    github.com/altaweelmustafa
-  </a>
-  <span>
-    <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-    Al-Bireh, Palestine
-  </span>
-</div>
+      <div class="header-right">
+        <a href="https://altaweelmustafa.github.io" target="_blank">
+          <span class="icon"><i class="fa-solid fa-globe"></i></span>
+          maltaweel.com
+        </a>
+        <a href="https://github.com/altaweelmustafa" target="_blank">
+          <span class="icon"><i class="fa-brands fa-github"></i></span>
+          github.com/altaweelmustafa
+        </a>
+        <span>
+          <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+          Al-Bireh, Palestine
+        </span>
+      </div>
     </div>
 
     <!-- SUMMARY + SKILLS -->
@@ -181,8 +343,13 @@
           <hr class="divider" />
         </div>
         <p style="margin-top: 6px">
-          Computer Science student at Birzeit University, focusing on cybersecurity and networking with hands-on experience in penetration testing tools and networking fundamentals. Proficient in C and Python, with a strong interest in
-          <strong>network engineering</strong>, <strong>network installation and configuration</strong>, and <strong>network security</strong>.
+          Computer Science student at Birzeit University, focusing on
+          cybersecurity and networking with hands-on experience in penetration
+          testing tools and networking fundamentals. Proficient in C and
+          Python, with a strong interest in
+          <strong>network engineering</strong>,
+          <strong>network installation and configuration</strong>, and
+          <strong>network security</strong>.
         </p>
       </div>
       <div class="col-section">
@@ -192,8 +359,14 @@
         </div>
         <ul class="skills-list" style="margin-top: 6px">
           <li><strong>Languages:</strong> Java, Python, C, HTML, CSS</li>
-          <li><strong>Tools:</strong> Wireshark, Nmap, Metasploit, Burp Suite, Hydra</li>
-          <li><strong>Technologies:</strong> Git, Linux, Docker, Cisco Packet Tracer, ESP32, Arduino</li>
+          <li>
+            <strong>Tools:</strong> Wireshark, Nmap, Metasploit, Burp Suite,
+            Hydra
+          </li>
+          <li>
+            <strong>Technologies:</strong> Git, Linux, Docker, Cisco Packet
+            Tracer, ESP32, Arduino
+          </li>
         </ul>
       </div>
     </div>
@@ -212,7 +385,12 @@
             <span class="exp-role">Teaching Assistant — Arduino UNO</span>
             <a class="exp-company" href="https://labooacademy.ps/" target="_blank">LABOO Academy</a>
           </div>
-          <p class="exp-desc">Taught basic electronics and embedded systems to youth, covering digital logic, sensors, and microcontroller fundamentals. Delivered hands-on lab sessions and mentored students through practical projects.</p>
+          <p class="exp-desc">
+            Taught basic electronics and embedded systems to youth, covering
+            digital logic, sensors, and microcontroller fundamentals.
+            Delivered hands-on lab sessions and mentored students through
+            practical projects.
+          </p>
         </div>
       </div>
 
@@ -223,7 +401,10 @@
             <span class="exp-role">Call Center Agent</span>
             <a class="exp-company" href="https://coolnet.ps/" target="_blank">Coolnet</a>
           </div>
-          <p class="exp-desc">Provided technical and customer support, handling client inquiries and troubleshooting connectivity and network-related issues.</p>
+          <p class="exp-desc">
+            Provided technical and customer support, handling client inquiries
+            and troubleshooting connectivity and network-related issues.
+          </p>
         </div>
       </div>
     </div>
@@ -236,47 +417,81 @@
       </div>
 
       <div class="proj-entry">
-        <div class="proj-tags"><i>AI, ML</i><br /><i>Networking, Security</i></div>
+        <div class="proj-tags">
+          <i>AI, ML</i><br /><i>Networking, Security</i>
+        </div>
         <div class="proj-body">
           <div class="proj-header">
-            <span class="proj-name">Multi-Agent System For Crisis Management — Palestinian Blood Bank Network</span>
+            <span class="proj-name">Multi-Agent System For Crisis Management — Palestinian Blood
+              Bank Network</span>
             <a class="proj-link" href="YOUR_LINK_HERE" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Europe_flag_circle.png" style="width:13px; height:13px; vertical-align:middle;" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Europe_flag_circle.png"
+                style="width: 13px; height: 13px; vertical-align: middle" />
             </a>
           </div>
-          <p class="proj-desc">A part of EU program <strong>MEDAIGENCY</strong>. Developed the network architecture and communication protocols for a multi-agent system designed to manage crisis situations for <strong>Palestinian blood bank network</strong>. Enables autonomous agents to coordinate and share information effectively, improving response times and decision-making during emergencies.</p>
+          <p class="proj-desc">
+            A part of EU program <strong>MEDAIGENCY</strong>. Developed the
+            network architecture and communication protocols for a multi-agent
+            system designed to manage crisis situations for
+            <strong>Palestinian blood bank network</strong>. Enables
+            autonomous agents to coordinate and share information effectively,
+            improving response times and decision-making during emergencies.
+          </p>
         </div>
       </div>
 
       <div class="proj-entry">
-        <div class="proj-tags"><i>Linux, Docker</i><br /><i>Self-Hosted</i></div>
+        <div class="proj-tags">
+          <i>Linux, Docker</i><br /><i>Self-Hosted</i>
+        </div>
         <div class="proj-body">
           <div class="proj-header">
             <span class="proj-name">Home Lab</span>
           </div>
-          <p class="proj-desc">Built and maintain a self-hosted home lab running Debian on a mini PC. Hosts a range of services via Docker, including Tailscale VPN mesh, self-developed web apps (Text-editor, chess engine, comics reader, etc.. — more on my github), and Uptime Kuma.</p>
+          <p class="proj-desc">
+            Built and maintain a self-hosted home lab running Debian on a mini
+            PC. Hosts a range of services via Docker, including Tailscale VPN
+            mesh, self-developed web apps (Text-editor, chess engine, comics
+            reader, etc.. — more on my github), and Uptime Kuma.
+          </p>
         </div>
       </div>
 
       <div class="proj-entry">
-        <div class="proj-tags"><i>React, Docker</i><br /><i>Networking, DevOps</i></div>
+        <div class="proj-tags">
+          <i>AI, ML</i><br /><i>Detection, Cybersecurity</i>
+        </div>
         <div class="proj-body">
           <div class="proj-header">
-            <span class="proj-name">Huvud</span>
-             <a class="proj-link" href="https://github.com/altaweelmustafa/Huvud" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <span class="proj-name">Röst</span>
+            <a class="proj-link" href="https://github.com/altaweelmustafa/Rost" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
           </div>
-          <p class="proj-desc">Developed a React-based network operations dashboard for monitoring and managing any infrastructure. Backed by Headscale, Uptime Kuma, and Grafana running in Docker Compose, providing a unified view of network health, service availability, and system metrics.</p>
+          <p class="proj-desc">
+            Developed a CNN-based deepfake voice detection system achieving
+            99.83% accuracy, 100% recall, and 0.9997 AUC on the ASVspoof 2019
+            benchmark dataset, directly addressing AI-powered social
+            engineering threats such as executive voice cloning attacks.
+          </p>
         </div>
       </div>
 
       <div class="proj-entry">
-        <div class="proj-tags"><i>Cisco Packet Tracer</i><br /><i>Networking</i></div>
+        <div class="proj-tags">
+          <i>Cisco Packet Tracer</i><br /><i>Networking</i>
+        </div>
         <div class="proj-body">
           <div class="proj-header">
             <span class="proj-name">Network Topology Simulation</span>
-             <a class="proj-link" href="https://github.com/altaweelmustafa/Network-Final-Topology" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a class="proj-link" href="https://github.com/altaweelmustafa/Network-Final-Topology" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
           </div>
-          <p class="proj-desc">Designed and implemented a network topology simulation in Cisco Packet Tracer, demonstrating core networking concepts including routing, switching, VLANs, ACLs, and inter-device communication across a multi-layer network architecture.</p>
+          <p class="proj-desc">
+            Designed and implemented a network topology simulation in Cisco
+            Packet Tracer, demonstrating core networking concepts including
+            routing, switching, VLANs, ACLs, and inter-device communication
+            across a multi-layer network architecture.
+          </p>
         </div>
       </div>
     </div>
@@ -293,12 +508,17 @@
         <div class="proj-body">
           <div class="proj">
             <span class="proj-name">QLEACH-EAS Simulation</span>
-            <a class="proj-link" href="https://github.com/altaweelmustafa/QLEACH-EAS-Simulation" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a class="proj-link" href="https://github.com/altaweelmustafa/QLEACH-EAS-Simulation" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
           </div>
           <p class="proj-desc">
-            Simulated the QLEACH-EAS protocol, an energy-aware clustering algorithm for WSNs. Investigates routing efficiency, energy consumption, and network lifetime optimization in IoT environments.
+            Simulated the QLEACH-EAS protocol, an energy-aware clustering
+            algorithm for WSNs. Investigates routing efficiency, energy
+            consumption, and network lifetime optimization in IoT
+            environments.
             <br />
-            <a href="https://www.researchgate.net/publication/404703410_QLEACH-EAS_A_Q-Learning_Based_Energy-Aware_Secure_Clustering_Protocol_for_Wireless_Sensor_Networks" target="_blank" style="color:#1a56c4;">DOI: 10.13140/RG.2.2.36348.09607</a>
+            <a href="https://www.researchgate.net/publication/404703410_QLEACH-EAS_A_Q-Learning_Based_Energy-Aware_Secure_Clustering_Protocol_for_Wireless_Sensor_Networks"
+              target="_blank" style="color: #1a56c4">DOI: 10.13140/RG.2.2.36348.09607</a>
           </p>
         </div>
       </div>
@@ -338,7 +558,7 @@
               <div class="edu-sub">CompTIA</div>
             </div>
           </div>
-           <div class="edu-entry">
+          <div class="edu-entry">
             <div class="edu-date"><em>In Progress</em></div>
             <div class="edu-body">
               <div class="edu-header">
@@ -362,7 +582,7 @@
         <strong>English</strong> - B2
       </div>
     </div>
-
   </div>
 </body>
+
 </html>
